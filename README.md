@@ -279,36 +279,72 @@ The API includes comprehensive error handling for:
 
 ## Production Deployment
 
-### Docker Deployment
-```dockerfile
-FROM python:3.9-slim
+### 🚀 Quick Deploy Options
 
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+#### 1. Vercel (Recommended - Free)
+```bash
+# Install Vercel CLI
+npm i -g vercel
 
-COPY app.py .
-EXPOSE 8000
+# Deploy
+vercel --prod
+```
+**Or:** Import `satyamrojhax/OpenData` at [vercel.com](https://vercel.com)
 
-CMD ["python", "app.py"]
+#### 2. Railway (Free Tier)
+```bash
+# Install Railway CLI
+npm i -g @railway/cli
+
+# Deploy
+railway login
+railway up
 ```
 
-### Systemd Service
-```ini
-[Unit]
-Description=Video API Proxy
-After=network.target
+#### 3. Render (Free Tier)
+- Connect GitHub repo at [render.com](https://render.com)
+- Auto-deploys from main branch
 
-[Service]
-Type=simple
-User=apiuser
-WorkingDirectory=/path/to/OpenData
-ExecStart=/usr/bin/python app.py
-Restart=always
+#### 4. Docker
+```bash
+# Build and run
+docker-compose up -d
 
-[Install]
-WantedBy=multi-user.target
+# Access at http://localhost:8000
 ```
+
+### 📋 Deployment Files Included
+
+- ✅ `vercel.json` - Vercel configuration
+- ✅ `api/index.py` - Serverless function
+- ✅ `Dockerfile` - Container configuration  
+- ✅ `docker-compose.yml` - Multi-container setup
+- ✅ `render.yaml` - Render deployment config
+- ✅ `DEPLOYMENT.md` - Complete deployment guide
+
+### 🔗 Live Deployment URLs
+
+After deployment, your API will be available at:
+- **Vercel**: `https://your-app.vercel.app/api/get-video-url`
+- **Railway**: `https://your-app.railway.app/api/get-video-url`
+- **Render**: `https://your-app.onrender.com/api/get-video-url`
+
+### 🧪 Testing Deployment
+
+```bash
+# Test the deployed API
+curl "https://your-domain.com/api/get-video-url?batchId=694e195974706955f00b8672&subjectId=694e914dc0e261270c605514&childId=6960d657ea1a12af73c5b05e"
+```
+
+### 📊 Monitoring & Logs
+
+All platforms include:
+- **Real-time logs** for debugging
+- **Performance metrics** 
+- **Error tracking**
+- **Uptime monitoring**
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## Troubleshooting
 

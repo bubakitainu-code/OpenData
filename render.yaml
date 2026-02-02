@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: video-api-proxy
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    envVars:
+      - key: ENCRYPTION_KEY
+        value: maggikhalo
+      - key: BASE_URL
+        value: https://deltastudy.site
+      - key: PORT
+        value: 10000
+    autoDeploy: true
